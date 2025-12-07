@@ -1,60 +1,93 @@
 body {
   background: #f0f2f5;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   text-align: center;
-  padding: 30px;
+  padding: 40px 20px;
   max-width: 700px;
   margin: auto;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 20px;
 }
 
 .counter {
   margin-top: 25px;
-  padding: 15px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.counter:hover {
+  transform: translateY(-3px);
 }
 
 .filtered-list-box {
   margin-top: 30px;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.filtered-list-box:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 .search-input {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
   border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #61dafb;
+  outline: none;
 }
 
 .dropdown-label {
   margin-right: 10px;
   font-weight: bold;
+  font-size: 16px;
 }
 
 ul {
   margin-top: 20px;
   font-size: 18px;
+  list-style: none;
+  padding-left: 0;
 }
 
 li {
-  padding: 5px 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+li:hover {
+  background: #f9f9f9;
+  cursor: pointer;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin-bottom: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -64,18 +97,26 @@ li {
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(135deg, #282c34, #3c4049);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ffffff;
+  padding-top: 60px;
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.App-link:hover {
+  color: #21a1f1;
 }
 
 @keyframes App-logo-spin {
@@ -85,4 +126,20 @@ li {
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #61dafb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #21a1f1;
+  transform: translateY(-2px);
 }
