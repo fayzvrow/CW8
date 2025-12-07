@@ -1,5 +1,5 @@
 {
-  "name": "cw9-app",
+  "name": "cw8-app",
   "version": "0.1.0",
   "homepage": "https://fayzvrow.github.io/CW8",
   "private": true,
@@ -7,7 +7,7 @@
     "cra-template": "1.3.0",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "^0.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
